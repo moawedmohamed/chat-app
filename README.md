@@ -26,13 +26,13 @@ A real-time chat application built with Node.js, Express, and Socket.IO.
 ### Installation
 
 ```bash
-pnpm install
+pnpm install  or npm install
 ```
 
 ### Running the App
 
 ```bash
-pnpm dev
+pnpm dev  or npm run dev
 ```
 
 The app will be available at `http://localhost:3000`
