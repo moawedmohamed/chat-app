@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"></script>
+  </head>
+  <body>
+    <div class="chat-app">
+      <div class="chat-header">
+        <h2>Chat messages</h2>
+      </div>
+
+      <div id="chat" class="chat-window"></div>
+      <div id="broadcast" class="typing-indicator"></div>
+
+      <div class="chat-input-area">
+        <div class="input-row">
+          <div class="input-group" style="flex: 1">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your name" />
+          </div>
+          <div class="input-group" style="flex: 1">
+            <label for="recipient">To (Optional)</label>
+            <input
+              type="text"
+              id="recipient"
+              placeholder="Leave empty for public"
+            />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <div class="input-row">
+            <textarea
+              id="message"
+              placeholder="Type a message (Press Enter to send)"
+            ></textarea>
+            <button id="btn" class="btn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./client.js"></script>
+  </body>
+</html>
